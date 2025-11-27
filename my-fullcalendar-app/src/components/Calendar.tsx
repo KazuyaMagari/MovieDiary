@@ -40,6 +40,14 @@ const AppContainer = styled.div`
   min-height: 100vh;
 `;
 
+const CalendarContainer = styled.div`
+  margin: 40px auto;
+  padding: 0 20px;
+  max-width: 80vw;
+  max-height: 100vh;
+  width: 100%;
+`;
+
 function Calendar() {
   const [selectedDate, setSelectedDate] = useState<string | null>(null);
 
@@ -84,12 +92,5 @@ function Calendar() {
     </>
   );
 }
-
-const CalendarContainer = styled.div`
-  margin: 40px auto;
-  padding: 0 20px;
-  max-width: 800px;
-  width: 100%;
-`;
 
 export default Calendar;
